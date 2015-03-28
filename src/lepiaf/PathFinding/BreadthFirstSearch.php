@@ -19,7 +19,7 @@ class BreadthFirstSearch implements PathFindingInterface
         $frontier = new \SplQueue();
         $frontier->enqueue($grid->getStart());
         $cameFrom = [];
-        $cameFrom[$this->toKey($grid->getStart())] = null;
+        $cameFrom[$this->toKey($grid->getStart())] = false;
 
         while (!$frontier->isEmpty()) {
             $current = $frontier->dequeue();
