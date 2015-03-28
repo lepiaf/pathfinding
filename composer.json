@@ -1,0 +1,14 @@
+{
+    "name": "lepiaf/pathfinding",
+    "description": "Implement A-start algorithm in PHP",
+    "authors": [
+        {
+            "name": "Thierry Thuon",
+            "email": "lepiaf@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"lepiaf\\pathfinding": "src/"}
+    }
+}
