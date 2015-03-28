@@ -9,7 +9,7 @@
     ],
     "require": {},
     "autoload": {
-        "psr-0": {"lepiaf\\PathFinding": "src/"}
+        "psr-0": {"lepiaf\\PathFinding": "src"}
     },
     "minimum-stability": "dev",
     "require": {

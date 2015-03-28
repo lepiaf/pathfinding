@@ -1,11 +1,11 @@
 <?php
 
-namespace lepiaf\pathfinding;
+namespace lepiaf\PathFinding;
 
 /**
  * Interface PathFindingInterface
  *
- * @package lepiaf\pathfinding
+ * @package lepiaf\PathFinding
  */
 interface PathFindingInterface {
 
