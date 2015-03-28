@@ -16,13 +16,13 @@ class BreadthFirstSearch implements PathFindingInterface
      */
     public function search(Grid $grid)
     {
-        $frontier = new Queue();
-        $frontier->put($grid->getStart());
+        $frontier = new \SplQueue();
+        $frontier->enqueue($grid->getStart());
         $cameFrom = [];
         $cameFrom[$this->toKey($grid->getStart())] = null;
 
         while (!$frontier->isEmpty()) {
-            $current = $frontier->get();
+            $current = $frontier->dequeue();
 
             if ($current === $grid->getTarget()) {
                 break;
@@ -30,7 +30,7 @@ class BreadthFirstSearch implements PathFindingInterface
 
             foreach ($grid->getNeighbors($current) as $next) {
                 if (!isset($cameFrom[$this->toKey($next)])) {
-                    $frontier->put($next);
+                    $frontier->enqueue($next);
                     $cameFrom[$this->toKey($next)] = $current;
                 }
             }
