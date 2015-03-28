@@ -9,6 +9,12 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"lepiaf\\pathfinding\\": "src/"}
-    }
+        "psr-0": {"lepiaf\\PathFinding": "src/"}
+    },
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=5.3.3"
+    },
+    "keywords": ["bfs", "algorithm", "path", "search"],
+    "license": "MIT"
 }
