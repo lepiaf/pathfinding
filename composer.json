@@ -9,6 +9,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"lepiaf\\pathfinding": "src/"}
+        "psr-4": {"lepiaf\\pathfinding\\": "src/"}
     }
 }
